@@ -19,37 +19,51 @@ body {
 
 #container{
 	width:1000px;
-	
 	margin: auto;
+	
 }
 
 
 #header{
 	width:1000px;
-	
+	background-image: url('../images/suli.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	border: 2px solid  #E98300;
+	border-radius: 8px 5px;
 	}
 
 #suli{
 	width:260px;
 	height:128px;
+	float: right;
+	text-align: center;
+	
 	
 }
 
 #suli p{
 	color:#0395d0;
-	
+	font-weight: bold;
+	font-size: larger;
 }
 
 #menu {
-	
+	margin: 20px 0px 20px 0px;
 }
 
 .menuitem{
+	display:inline-block;
 	
 }
 
 .menuitem a{
 	background-image: url('../images/menu-blue.gif');
+	border: 2px solid  #E98300;
+	border-radius: 8px 5px;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
 }
 
 .menuitem a:hover{
@@ -61,21 +75,26 @@ body {
 
 .main{
 	width:980px;
-
+	background-color: gainsboro;
+	border: 2px solid  #E98300;
+	border-radius: 8px 5px;
 }
 
 #content{
 	width:826px;
-
+	border: 2px solid  #E98300;
+	border-radius: 8px 5px;
 }
 
 #footer{
 	width: 980px;
-
+	background-color: gainsboro;
+	border: 2px solid  #E98300;
+	border-radius: 8px 5px;
+	margin: 10px auto;
 }
 
 .doboz{
 	width:190px;
-	border: 2px #E98300;
-	border-radius: 8px 5px;
+	display: inline-block;
 }

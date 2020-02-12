@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
 
-
+	<?php require_once "include/mysql.php"; ?>
 	<title>Apáczai Szakgimnázium és Kollégium</title>
 
 </head>
@@ -16,7 +16,7 @@
 	<div id="header">
 		<div id="suli"><p>Apáczai Szakgimnázium és&nbsp;Kollégium<br>Dombóvár</p></div>
 		<div style="clear:both;"></div>
-		&nbsp;
+		
 	</div>
 	<div style="clear:both;"></div>
 	<div id="menu">
@@ -32,9 +32,8 @@
 	</div>
 
 	<div class="main">
-
-
-
+	
+	
 	</div>
 
 	<div style="clear:both;"></div>
