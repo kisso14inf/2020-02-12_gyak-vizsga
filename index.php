@@ -20,7 +20,7 @@
 	</div>
 	<div style="clear:both;"></div>
 	<div id="menu">
-		<div class="menuitem"><a href="">Iskolánkról</a></div>
+		<div class="menuitem"><a href="" >Iskolánkról</a></div>
 		<div class="menuitem"><a href="">Beiskolázás</a></div>
 		<div class="menuitem"><a href="">Képzés, vizsgák</a></div>
 		<div class="menuitem"><a href="">Dokumentumtár</a></div>

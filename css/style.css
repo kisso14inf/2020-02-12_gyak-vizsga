@@ -19,7 +19,10 @@ body {
 
 #container{
 	width:1000px;
+	
+	margin: auto;
 }
+
 
 #header{
 	width:1000px;
@@ -37,23 +40,23 @@ body {
 	
 }
 
-#menu{
+#menu {
 	
 }
 
 .menuitem{
-	background-image: url("../images/menu-blue.gif");
+	
 }
 
 .menuitem a{
-	
+	background-image: url('../images/menu-blue.gif');
 }
 
 .menuitem a:hover{
-	
+	background-image: url('../images/menu-lime.gif');
 }
 .menuitem a.activemenu{
-	
+	background-image: url('../images/menu-lime.gif');
 }
 
 .main{
@@ -73,5 +76,6 @@ body {
 
 .doboz{
 	width:190px;
-
+	border: 2px #E98300;
+	border-radius: 8px 5px;
 }
