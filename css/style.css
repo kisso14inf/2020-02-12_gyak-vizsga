@@ -98,3 +98,8 @@ body {
 	width:190px;
 	display: inline-block;
 }
+
+td
+{
+	border: 2px solid #E98300; border-radius: 8px; padding: 5px;
+}

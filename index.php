@@ -1,11 +1,10 @@
+<?php require_once "include/mysql.php"; ?>
 <!DOCTYPE html>
 <html lang="hu">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
-
-	<?php require_once "include/mysql.php"; ?>
 	<title>Apáczai Szakgimnázium és Kollégium</title>
 
 </head>
@@ -20,19 +19,28 @@
 	</div>
 	<div style="clear:both;"></div>
 	<div id="menu">
-		<div class="menuitem"><a href="" >Iskolánkról</a></div>
-		<div class="menuitem"><a href="">Beiskolázás</a></div>
-		<div class="menuitem"><a href="">Képzés, vizsgák</a></div>
-		<div class="menuitem"><a href="">Dokumentumtár</a></div>
-		<div class="menuitem"><a href="">Projektek</a></div>
-		<div class="menuitem"><a href="">Tanáraink</a></div>
-		<div class="menuitem"><a href="">Alapítvány</a></div>
-		<div class="menuitem"><a href="">Fenntartó</a></div>
+		<div class="menuitem"><a href="index.php?o=iskola">Iskolánkról</a></div>
+		<div class="menuitem"><a href="index.php?o=beiskolazas">Beiskolázás</a></div>
+		<div class="menuitem"><a href="index.php?o=kepzes">Képzés, vizsgák</a></div>
+		<div class="menuitem"><a href="index.php?o=dokumentumtar">Dokumentumtár</a></div>
+		<div class="menuitem"><a href="index.php?o=projekt">Projektek</a></div>
+		<div class="menuitem"><a href="index.php?o=tanaraink">Tanáraink</a></div>
+		<div class="menuitem"><a href="index.php?o=alapitvany">Alapítvány</a></div>
+		<div class="menuitem"><a href="index.php?o=fenntarto">Fenntartó</a></div>
 		<div style="clear:both;"></div>
 	</div>
 
 	<div class="main">
-	
+	<?php
+		if(isset($_GET["o"]))
+		{
+			$filename = "include/" . $_GET["o"] .".php";
+			if(file_exists($filename)) 
+			require_once "include/" . $_GET["o"] .".php";
+			else { echo "Nincs ilyen oldal"; }
+		}
+		
+	?>
 	
 	</div>
 
